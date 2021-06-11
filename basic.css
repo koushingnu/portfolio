@@ -126,7 +126,7 @@ text-align: center;
   padding-left: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .header {
     display: none;
 
