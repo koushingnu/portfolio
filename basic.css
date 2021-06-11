@@ -21,10 +21,24 @@ body {
   color: #aaaaaa;
   font-size: 12px;
   letter-spacing: 1px;
-  margin: 0;
-  position: absolute;
-  left: 3%;
-  top: 10px;
+  margin: 20px 100px;
+}
+
+.header dt {
+  float: left;
+  
+}
+
+.header dd {
+  float: right;
+  display: flex;
+  margin-left: 20px;
+}
+
+.header a {
+  color: #aaaaaa;
+  text-decoration: none;
+  padding-right: 30px;
 }
 
 
@@ -40,7 +54,7 @@ body {
   color: #231815;
   text-decoration: none;
   display: inline;
-  font-size: 4vw;
+  font-size: 3vw;
   padding: 0;
   margin: 0;
 }
@@ -54,7 +68,6 @@ body {
 }
 
 .profile {
-  padding: 0 200px;
   font-size: 20px;
   background-color: #efeded;
   padding-top: 100px;
@@ -71,6 +84,13 @@ body {
  letter-spacing: 2px;
  line-height:50px;
  word-break: break-all;
+}
+
+
+.profile-text {
+  width: 70%;
+  margin: 0px auto;
+
 }
 
 .skill {
@@ -127,9 +147,14 @@ text-align: center;
 }
 
 @media screen and (max-width: 850px) {
-  .header {
-    display: none;
-
+  .header dl{
+    margin: 10px 30px;
+  }
+  .header dd {
+    flex-direction: column;
+  }
+  .header a {
+    padding: 6px 0;
   }
   .logo {
     width: 100%;
@@ -139,7 +164,7 @@ text-align: center;
     padding: 20px 0px 70px 0px;
     font-size: 26px;
     letter-spacing: 3px;
-    height: 600px;
+    height: 300px;
   }
   .logo a {
     white-space: nowrap
@@ -156,7 +181,11 @@ text-align: center;
     margin-bottom: 20px;
   }
   .profile p{
-    font-size: 13px;
+    font-size: 18px;
+  }
+  .profile-text{
+    width: 100%;
+    margin: 0;
   }
   .contents{
     flex-direction: column;
